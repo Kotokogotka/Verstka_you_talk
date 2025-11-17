@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.woff2') format('woff2'),
+         url('../fonts/Montserrat/Montserrat-VariableFont_wght.woff') format('woff'),
+         url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff2') format('woff2'),
+         url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff') format('woff'),
+         url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
 body {
     width: 1440px;
     height: 2284px;
@@ -41,6 +61,7 @@ body {
     text-decoration: none;
     align-self: center;
     justify-items: center;
+    font-family: 'Montserrat';
     color: #333333;
     font-size: 14px;
     font-weight: 500; 
@@ -56,3 +77,238 @@ body {
     gap: 15px;
     margin-left: auto;
 }
+
+.button_search {
+    display: flex;
+    width: 230px;
+    height: 48px;
+    margin-top: 14px;
+    margin-right: 140px;
+    border: none;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    padding: 14px 20px 14px 20px;
+    gap: 10px;
+    background-color: #E3F5F5;
+    color: #03B2A5;
+    font-family: 'Montserrat';
+}
+
+.container_navigation {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    width: 110px;
+    height: 18px;
+    margin-top: 16px;
+    margin-left: 40px;
+    gap: 8px;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.container_page_name {
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.container_navigation_articles ul {
+    display: flex;
+    flex-direction: row;
+    width: 1181px;
+    height: 32px;
+    list-style: none;
+    margin-top: 32px;
+}
+
+.container_navigation_articles ul li {
+    display: flex;
+    padding-right: 8px;
+}
+
+.content_string_1 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.content_string_1.first_img_txt,
+.content_string_2.first_img_txt {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border: rgba(255, 255, 255, 1) 1px;
+    width: 588px;
+    height: 260px;
+    margin-left: 40px;
+   
+}
+
+.content_string_1.first_img_txt img,
+.content_string_2.first_img_txt img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.content_string_1.first_img_txt img:nth-child(1),
+.content_string_2.first_img_txt img:nth-child(1)
+ {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.content_string_1.first_img_txt img:nth-child(2) {
+    position: absolute;
+    top: 48px;
+    left: 8px; 
+}
+
+.content_string_1.first_txt,
+.content_string_1.second_txt {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid rgba(222, 222, 222, 1) 1px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.content_string_1.first_txt h1,
+.content_string_1.second_txt h1,
+.content_string_3.second_txt h1 {
+    display: flex;
+    padding-left: 16px;
+    font-family: 'Montserrat';
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    color: rgba(51, 51, 51, 1);
+}
+
+.content_string_1.first_txt h3,
+.content_string_1.second_txt h3,
+.content_string_3.second_txt h3
+ {
+    display: flex;
+    padding-left: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: rgba(73, 73, 73, 1);
+}
+
+.content_string_1.first_txt h2,
+.content_string_1.second_txt h2,
+.content_string_3.second_txt h2 {
+    display: flex;
+    padding-left: 16px;
+    font-family: 'Montserat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.string_2 {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 475px;
+    margin-left: 45px;
+    margin-top: 254px;
+    gap: 24px;
+}
+
+
+/* Иконки - абсолютное позиционирование */
+.content_string_3.first_img_txt img:nth-child(1) {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+}
+
+.content_string_3.first_img_txt img:nth-child(2) {
+    display: flex;
+    position: absolute;
+    top: 48px;
+    left: 8px;
+    z-index: 2;
+}
+
+.content_string_3.second_img_txt img:nth-child(1) {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+}
+
+/* Основная картинка (последняя) - только для first_img_txt (3 картинки) */
+.content_string_3.first_img_txt img:nth-child(3) {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+
+.content_string_3.second_img_txt img:nth-child(2) {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.content_string_3.second_img_txt,
+.content_string_3.first_img_txt {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border: rgba(255, 255, 255, 1) 1px;
+    width: 384px;
+    height: auto;
+    min-height: 475px;
+}
+
+.content_string_3.second_txt {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    border-left: solid rgba(222, 222, 222, 1) 1px;
+    border-right: solid rgba(222, 222, 222, 1) 1px;
+    border-bottom: solid rgba(222, 222, 222, 1) 1px;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-top: 0;
+    padding-bottom: 16px;
+}
+
